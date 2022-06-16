@@ -35,16 +35,21 @@ body {
 
 
 .nav {
-  padding: 14px 20px;
+  padding: 14px 0;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
   gap: 20px;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 1px 6px -6px #000;
 }
 
 .nav__logo {
+  margin-left: 20px;
   width: 106px;
   height: 32px;
 }
@@ -65,17 +70,19 @@ body {
   border: 1px solid #000;
 }
 
-.nav__icon_link_whatsapp {
-  background-image: url(../images/icon-whatsapp.svg);
-}
-
 .nav__icon_link_phone {
   background-image: url(../images/icon-phone.svg);
+}
+
+.nav__icon_link_whatsapp {
+  background-image: url(../images/icon-whatsapp.svg);
+  margin-right: 20px;
 }
 
 .header {
   max-width: 600px;
   margin: 0 auto;
+  margin-top: 68px;
   padding: 35px 20px 0;
 }
 
