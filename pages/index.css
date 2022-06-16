@@ -17,11 +17,22 @@ body {
 }
 
 .page {
-  max-width: 640px;
   margin: 0 auto;
   padding: 0;
   background-color: #f5f4f0;
 }
+
+.main {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #f5f4f0;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #DFE948;
+}
+
 
 .nav {
   padding: 14px 20px;
@@ -63,6 +74,8 @@ body {
 }
 
 .header {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 35px 20px 0;
 }
 
@@ -308,9 +321,14 @@ body {
   background-position-y: 25px;
 }
 
-.order {
+.footer {
   background-color: #DFE948;
-  margin-top: 50px;
+}
+
+.order {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #DFE948;
   padding: 40px 20px 0;
 }
 
