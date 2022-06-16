@@ -1,9 +1,6 @@
-
 const options = {
   controlColor: "#D1DE37",
-  addCircle: false,
-  addCircleBlur: false,
-
+  addCircle: false
 };
 
 const viewers = document.querySelectorAll(".image-compare");

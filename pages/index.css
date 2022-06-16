@@ -17,7 +17,7 @@ body {
 }
 
 .page {
-  max-width: 320px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 0;
   background-color: #f5f4f0;
@@ -74,7 +74,7 @@ body {
   text-align: center;
   background-image: url(../images/decor-big-line.svg);
   background-repeat: no-repeat;
-  background-position-y: 30px;
+  background-position: top 30px center;
 }
 
 .special-underline {
@@ -86,12 +86,21 @@ body {
   padding: 25px 10px;
   background-image: url(../images/icon-cross.svg);
   background-position: 50% 50%;
+  background-size: 4%;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 40% 1fr 40%;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+
+.partner-logos__logo {
+  width: 100%;
+}
+
+.partner-logos__logo_worldclass {
+  grid-column-start: 3;
 }
 
 .offer {
@@ -138,8 +147,7 @@ body {
 }
 
 .doctor__photo {
-  width: 280px;
-  height: 320px;
+  width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
@@ -236,8 +244,11 @@ body {
 }
 
 .works__image {
-  width: 280px;
   border-radius: 10px 10px 0 0;
+}
+
+.works__image_static {
+  width: 100%;
 }
 
 .works__title {
@@ -333,4 +344,10 @@ body {
   background-size: 80%;
   background-position: bottom 25px center;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 400px) {
+  .order__address {
+    background-size: auto;
+  }
 }
