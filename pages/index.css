@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css');
+
+.icv__theme-wrapper {
+  align-items: flex-end;
+}
+
+.icv__arrow-wrapper {
+  width: 14px;
+  height: 21px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f5f4f0;
+}
+
+.nav {
+  padding: 14px 20px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+}
+
+.nav__logo {
+  width: 106px;
+  height: 32px;
+}
+
+.nav__icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #F5F4F0;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: border .5s;
+}
+
+.nav__icon:hover {
+  border: 1px solid #000;
+}
+
+.nav__icon_link_whatsapp {
+  background-image: url(../images/icon-whatsapp.svg);
+}
+
+.nav__icon_link_phone {
+  background-image: url(../images/icon-phone.svg);
+}
+
+.header {
+  padding: 35px 20px 0;
+}
+
+.header__title {
+  font-size: 18px;
+  line-height: 2;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  text-align: center;
+  background-image: url(../images/decor-big-line.svg);
+  background-repeat: no-repeat;
+  background-position-y: 30px;
+}
+
+.special-underline {
+  display: inline-block;
+  width: 100%;
+}
+
+.partner-logos {
+  padding: 25px 10px;
+  background-image: url(../images/icon-cross.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.offer {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 26px 9px 0 9px;
+}
+
+.offer__title {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.offer__price {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D1DE37;
+  height: 40px;
+  width: 110px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  bottom: -20px;
+  margin-bottom: 20px;
+}
+
+.doctor {
+  margin: 50px 20px 35px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-bottom: 35px;
+}
+
+.doctor__photo {
+  width: 280px;
+  height: 320px;
+  border-radius: 10px 10px 0 0;
+}
+
+.doctor__title {
+  padding-top: 18px;
+}
+
+.doctor__status {
+  margin: 0;
+  padding: 10px 50px 0;
+  color: #252525;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.section-title {
+  margin: 0;
+  color: #252525;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+}
+
+.doctor__cite {
+  color: #99979A;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.doctor__sign {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.action-button {
+  margin: 30px 20px 0;
+}
+
+.button {
+  border: 2px solid #000;
+  border-radius: 40px;
+  color: #252525;
+  padding: 18px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-variant-numeric: lining-nums;
+  display: block;
+  transition: background-color .5s;
+  transition: color .5s;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #000;
+
+}
+
+.works {
+  margin: 50px 20px 0;
+}
+
+.works__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.works__item {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.works__images {
+  border-radius: 10px 10px 0 0;
+}
+
+.works__image {
+  width: 280px;
+  border-radius: 10px 10px 0 0;
+}
+
+.works__title {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  color: #252525;
+  padding: 15px 20px;
+}
+
+
+.profits {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 50px 20px 0;
+  padding-bottom: 10px;
+}
+
+.profits__title {
+  padding: 25px 15px 15px;
+}
+
+.profits__items {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.profits__item {
+  counter-increment: my-awesome-counter;
+  position: relative;
+  color: #252525;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.profits__item:before {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  font-variant-numeric: lining-nums;
+  content: counter(my-awesome-counter);
+  color: #252525;
+  position: absolute;
+  left: 0px;
+  width: 35px;
+  padding: 0 0 15px 15px;
+  background-image: url(../images/decor-small-line.svg);
+  background-repeat: no-repeat;
+  background-position-y: 25px;
+}
+
+.order {
+  background-color: #DFE948;
+  margin-top: 50px;
+  padding: 40px 20px 0;
+}
+
+.order__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.order__text {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 30px 30px 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+
+.order__address {
+  margin: 50px 0 0;
+  background-color: #fff;
+  color: #252525;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 30px 35px;
+  text-align: center;
+  background-image: url(../images/decor-big-line.svg);
+  background-size: 80%;
+  background-position: bottom 25px center;
+  background-repeat: no-repeat;
+}
